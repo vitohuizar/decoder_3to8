@@ -3,12 +3,12 @@
 # SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Wed Apr 17 15:30:43 2024
-# Process ID: 17072
+# Start of session at: Tue Apr 23 11:45:51 2024
+# Process ID: 12376
 # Current directory: C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1
-# Command line: vivado.exe -log decoder_3_to_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_3_to_8.tcl
-# Log file: C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1/decoder_3_to_8.vds
+# Command line: vivado.exe -log decoder_3to8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_3to8.tcl
+# Log file: C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1/decoder_3to8.vds
 # Journal file: C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1\vivado.jou
 # Running On: ANDROMEDA, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16830 MB
 #-----------------------------------------------------------
-source decoder_3_to_8.tcl -notrace
+source decoder_3to8.tcl -notrace

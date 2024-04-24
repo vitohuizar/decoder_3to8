@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1/decoder_3_to_8.tcl"
+  variable script "C:/Users/hvito/fun/vivado/lab12/lab12.runs/synth_1/decoder_3to8.tcl"
   variable category "vivado_synth"
 }
 
@@ -95,10 +95,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/hvito/fun/vivado/lab12/lab12.srcs/utils_1/imports/synth_1/decoder_3_to_8.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top decoder_3_to_8 -part xc7a100tcsg324-1
+synth_design -top decoder_3to8 -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -108,10 +110,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef decoder_3_to_8.dcp
+write_checkpoint -force -noxdef decoder_3to8.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file decoder_3_to_8_utilization_synth.rpt -pb decoder_3_to_8_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file decoder_3to8_utilization_synth.rpt -pb decoder_3to8_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

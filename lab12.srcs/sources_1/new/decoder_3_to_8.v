@@ -26,13 +26,13 @@ module decoder_3to8(
   output wire D0, D1, D2, D3, D4, D5, D6, D7
 );
 
-  and(D0, Enable, ~S2, ~S1, ~S0);
-  and(D1, Enable, ~S2, ~S1, S0);
-  and(D2, Enable, ~S2, S1, ~S0);
-  and(D3, Enable, ~S2, S1, S0); 
-  and(D4, Enable, S2, ~S1, ~S0);
-  and(D5, Enable, S2, ~S1, S0);
-  and(D6, Enable, S2, S1, ~S0);
-  and(D7, Enable, S2, S1, S0);
+  and(D7, Enable, ~S2, ~S1, ~S0);
+  and(D6, Enable, ~S2, ~S1, S0);
+  and(D5, Enable, ~S2, S1, ~S0);
+  and(D4, Enable, ~S2, S1, S0); 
+  and(D3, Enable, S2, ~S1, ~S0);
+  and(D2, Enable, S2, ~S1, S0);
+  and(D1, Enable, S2, S1, ~S0);
+  and(D0, Enable, S2, S1, S0);
 
 endmodule

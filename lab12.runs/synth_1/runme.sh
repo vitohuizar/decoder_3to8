@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log decoder_3_to_8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_3_to_8.tcl
+EAStep vivado -log decoder_3to8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_3to8.tcl
