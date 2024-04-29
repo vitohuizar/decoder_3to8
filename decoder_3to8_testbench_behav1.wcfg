@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="27.001 ns"></ZoomEndTime>
+      <ZoomEndTime time="27.101 ns"></ZoomEndTime>
       <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="73"></NameColumnWidth>
-      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+      <NameColumnWidth column_width="100"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wvobject fp_name="/decoder_3to8_testbench/Enable" type="logic">
